@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Video Conferencing Prototyping</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+  </head>
+
+  <body>
+
+    <h1>Video Conferencing Prototyping</h1>
+    <div id="videos">
+      <video id="localVideo" autoplay muted></video>
+    </div>
+
+    <div id="inputs">
+      <label for="rname">Room name:</label><br>
+      <input type="text" id="rname" name="rname" value = "foo" disabled><br>
+      <label for="uname">User name:</label><br>
+      <input type="text" id="uname" name="uname"><br><br>
+    </div>
+    
+    <div id=buttons>
+      <button id="startButton">Start</button>
+      <button id="callButton">Call</button>
+     <button id="enableScreenShare">EnableScreenShare</button>
+      <button id="disableScreenShare">DisableScreenShare</button>
+      <button id="hangupButton">Hang Up</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/lib/adapter.js"></script>
+    <script src="js/MultiMixer.js"></script>
+    <script src="js/main.js"></script>
+
+    
+  </body>
+</html>
